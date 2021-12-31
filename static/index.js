@@ -10,7 +10,7 @@ const getScore = () => {
             const elem = document.getElementById(key);
             const value = parseInt(res.data[key]);
 
-            elem.style.height = Math.floor(res.data[key] * 100 / 200) + "%"
+            elem.style.height = res.data[key] + "%"
             elem.ariaValueNow = value
 
             if (highest < value) {
